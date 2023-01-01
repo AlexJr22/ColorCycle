@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    background-color: var(--color1);
+    animation: BG-animation infinite 10s linear;
 }
 
 #container {
@@ -37,4 +37,29 @@ body {
 
     border-radius: 15px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes BG-animation {
+    0% {
+        background-color: var(--color1);
+    }
+    20% {
+        background-color: var(--color2);
+        
+    }
+    40% {
+        background-color: var(--color3);
+        
+    }
+    60% {
+        background-color: var(--color4);
+        
+    }
+    80% {
+        background-color: var(--color5);
+
+    }
+    100% {
+        background-color: var(--color1);
+    }
 }
