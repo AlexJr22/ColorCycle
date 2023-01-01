@@ -18,25 +18,32 @@ html, body {
 }
 
 body {
+    display: flex;
+    align-items: flex-end;
     animation: BG-animation infinite 10s linear;
 }
 
 #container {
     background-color: white;
-    position: absolute;
+
+    width: 30%;
+    height: 60px;
 
     display: flex;
-    width: 30%;
     padding: 15px;
-    
-    left: 50%;
-    bottom: 20%;
-    transform: translate(-50%, -50%);
-    
+    margin-inline: auto;
+    margin-bottom: 10%;
+
     justify-content: space-around;
 
     border-radius: 15px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+#container:hover {
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 @keyframes BG-animation {
